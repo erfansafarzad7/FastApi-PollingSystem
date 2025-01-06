@@ -7,10 +7,14 @@ from datetime import datetime, timedelta
 from typing import Optional
 from app.dependencies import get_db
 from app import models
+from dotenv import load_dotenv
+import os
 
-SECRET_KEY = "TRwl3zHVEvSLlmD9fp5OLRCd8NhYhhZRar006EcQ"
+load_dotenv()
+
+SECRET_KEY = os.getenv("SECRET_KEY")
+ACCESS_TOKEN_EXPIRE_MINUTES = os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES")
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
