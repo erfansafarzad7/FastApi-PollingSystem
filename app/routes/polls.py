@@ -1,3 +1,4 @@
+from typing import List
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
@@ -60,3 +61,14 @@ def read_poll(
         )
 
     return poll
+
+
+@router.get("/", response_model=List[polls.Poll])
+def get_all_polls(
+    skip: int = 0,
+    limit: int = 10,
+    db: Session = Depends(get_db)
+):
+
+    all_polls = db.query(models.Poll).offset(skip).limit(limit).all()
+    return all_polls
