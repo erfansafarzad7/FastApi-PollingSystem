@@ -2,7 +2,7 @@
 
 This project is a simple Polling System implemented using **FastAPI** and **PostgreSQL**. Users can create polls, add options, and vote on them.
 
-## ✅Features
+## ✅ Features
 
 - **Create and manage polls**
 - **Add options to polls**
@@ -11,7 +11,7 @@ This project is a simple Polling System implemented using **FastAPI** and **Post
 - **Pagination support for fetching polls**
 <!-- - **Unit tests for API endpoints** -->
 
-## 🔥Technologies Used
+## 🔥 Technologies Used
 
 - **FastAPI**: For building the API
 - **PostgreSQL**: As the primary database
@@ -20,13 +20,13 @@ This project is a simple Polling System implemented using **FastAPI** and **Post
 - **Docker**: For containerization and easy deployment
 <!-- - **Pytest**: For writing unit tests  -->
 
-# ⭐Setup and Installation
+# ⭐ Setup and Installation
 
-## 📌Prerequisites
+## 📌 Prerequisites
 
 - Docker and Docker Compose must be installed.
 
-## 📌Steps to Run the Project
+## 📌 Steps to Run the Project
 
 1. **Clone the repository**:
     ```
@@ -48,7 +48,7 @@ This project is a simple Polling System implemented using **FastAPI** and **Post
 
 ---
 
-## 🧾API Endpoints
+## 🧾 API Endpoints
 </br>
 
 ⭐**You can interact with the API using Swagger UI at `http://localhost:80/docs`**.
