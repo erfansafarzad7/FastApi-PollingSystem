@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
-from app.database.database import Base
+from app.database import Base
 
 
 class User(Base):
@@ -10,7 +10,7 @@ class User(Base):
     email = Column(String, unique=True, index=True)
     hashed_password = Column(String)
 
-    polls = relationship('Pool', back_populates="owner")
+    polls = relationship('Poll', back_populates="owner")
     votes = relationship('Vote', back_populates="voter")
 
 
@@ -30,6 +30,7 @@ class Option(Base):
     id = Column(Integer, primary_key=True, index=True)
     text = Column(String, index=True)
     poll_id = Column(Integer, ForeignKey('polls.id'))
+    vote_count = Column(Integer, default=0)
 
     poll = relationship('Poll', back_populates='options')
     votes = relationship('Vote', back_populates='option')
