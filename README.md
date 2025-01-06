@@ -109,8 +109,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 ### 🔗 Connect with Me
-- GitHub: [Visit Profile](https://github.com/erfansafarzad7)
+<!-- - GitHub: [Visit Profile](https://github.com/erfansafarzad7) -->
 - LinkedIn: [Visit Profile](https://linkedin.com/in/erfansafarzad7)
+- Email: [Send Me an Email](mailto:erfansafarzad7@gmail.com)
+- Telegram: [Send Me Message](https://t.me/erfansafarzad7)
 
 ---
 
